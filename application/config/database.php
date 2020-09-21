@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => getenv('OPENSHIFT_MYSQL_DB_HOST'),
-	'username' => getenv('OPENSHIFT_MYSQL_DB_USERNAME'),
-	'password' => getenv('OPENSHIFT_MYSQL_DB_PASSWORD'),
-	'database' => getenv('OPENSHIFT_APP_NAME'),
+	'hostname' => '127.0.0.1:8443',
+	'username' => getenv('MYSQL_USER'),
+	'password' => getenv('MYSQL_PASSWORD'),
+	'database' => getenv('MYSQL_DATABASE'),
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
