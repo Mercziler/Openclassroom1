@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '127.0.0.1:8443',
+	'hostname' => getenv('MYSQL_SERCVICE_HOST'),
 	'username' => getenv('MYSQL_USER'),
 	'password' => getenv('MYSQL_PASSWORD'),
 	'database' => getenv('MYSQL_DATABASE'),
