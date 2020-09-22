@@ -51,8 +51,8 @@ class login extends CI_Controller {
                //validation fails
                //$this->load->view('login');
 		  
-	header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/');
-
+	//header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/');
+	echo 'ta gueule';
           }
           else
           {
