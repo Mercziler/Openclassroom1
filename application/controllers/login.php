@@ -49,7 +49,10 @@ class login extends CI_Controller {
           if ($this->form_validation->run() == FALSE)
           {
                //validation fails
-               $this->load->view('login');
+               //$this->load->view('login');
+		  
+	header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/');
+
           }
           else
           {
