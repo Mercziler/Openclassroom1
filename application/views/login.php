@@ -34,7 +34,7 @@
 			<div class="wrap-login100 p-t-30 p-b-50">
 				
 				<span class="login100-form-title p-b-41">
-					Account Login test
+					Account Login 
 				</span>
 				
 				<?php 
@@ -44,7 +44,7 @@
 						"id" => "loginform",
 						"name" => "loginform"
 					);
-					echo form_open("login/",$attributes);
+					echo form_open("<?php echo base_url();?>application/controllers/login.php",$attributes);
 				 ?>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
