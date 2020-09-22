@@ -34,7 +34,7 @@
 			<div class="wrap-login100 p-t-30 p-b-50">
 				
 				<span class="login100-form-title p-b-41">
-					Account Login
+					Account Login test
 				</span>
 				
 				<?php 
