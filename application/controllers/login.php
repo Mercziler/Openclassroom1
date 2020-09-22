@@ -75,7 +75,7 @@ class login extends CI_Controller {
                          if ($sessiondata['type'] == "admin") {
                          	# code...
                          	//$this->load->view('Acceuil-admin');
-                              header('location:http://localhost:81/Openclassroom/index.php/Admin/');
+                              header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/Admin/');
 
                          }elseif ($sessiondata['type'] == "enseignant") {
                          	
@@ -97,14 +97,14 @@ class login extends CI_Controller {
                          }elseif ($sessiondata['type'] == "etudiant") {
                          	# code...
                          	//echo "woezon etudiant";
-                              header('location:http://localhost:81/Openclassroom/index.php/etudiant/');
+                              header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/etudiant/');
                          }
                     else
                     {
                          // affichage d'un message d'erreur puis redirection
                          $this->session->set_flashdata('msg',
                                '<div class="alert alert-danger text-center">login ou password invalid! Si vous etes sur que les données sont correct veuillez contacter l\'admin pour qu\'il active votre compte</div>');
-                         header("location:http://localhost:81/Openclassroom/index.php");
+                         header("location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php");
 	    		 
 	    		 exit();
                     }
@@ -113,7 +113,7 @@ class login extends CI_Controller {
                {
                  $this->session->set_flashdata('msg',
                                '<div class="alert alert-danger text-center">login ou password invalid! Si vous etes sur que les données sont correct veuillez contacter l\'admin pour qu\'il active votre compte</div>');
-                         header("location:http://localhost:81/Openclassroom/index.php");
+                         header("location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php");
 	    		 
 	    		 exit();
                }
