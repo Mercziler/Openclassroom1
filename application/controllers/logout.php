@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			$this->session->sess_destroy();
 
-	    		 header("location:http://localhost:81/Openclassroom/index.php");
+	    		 header("location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php");
 	    		 exit();
 
 		}
