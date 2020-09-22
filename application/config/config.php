@@ -23,7 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://openclassroom1-openclassroom1.127.0.0.1.nip.io';
+//$config['base_url'] = 'http://openclassroom1-openclassroom1.127.0.0.1.nip.io';
+$openappurl="http://".getenv('OPENSHIFT_APP_DNS');
+$config['base_url'] = $openappurl;
 
 /*
 |--------------------------------------------------------------------------
