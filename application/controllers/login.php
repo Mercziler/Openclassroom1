@@ -74,8 +74,8 @@ class login extends CI_Controller {
 
                          if ($sessiondata['type'] == "admin") {
                          	# code...
-                         	//$this->load->view('Acceuil-admin');
-                              header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/Admin/');
+                         	$this->load->view('Acceuil-admin');
+                              //header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/Admin/');
 
                          }elseif ($sessiondata['type'] == "enseignant") {
                          	
