@@ -236,8 +236,7 @@ $config['log_threshold'] = 0;
 | application/logs/ directory. Use a full server path with trailing slash.
 |
 */
-$config['log_path'] = ;
-//getenv('OPENSHIFT_LOG_DIR')
+$config['log_path'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -297,7 +296,6 @@ $config['error_views_path'] = '';
 |
 */
 $config['cache_path'] = '';
-//getenv('OPENSHIFT_DATA_DIR') . 'storage/framework/cache'
 
 /*
 |--------------------------------------------------------------------------
@@ -385,7 +383,6 @@ $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;
-  //getenv('OPENSHIFT_DATA_DIR') . 'storage/framework/sessions';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
@@ -526,4 +523,3 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-//getenv('OPENSHIFT_HAPROXY_IP') ?: ''
