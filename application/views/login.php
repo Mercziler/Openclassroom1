@@ -44,7 +44,7 @@
 						"id" => "loginform",
 						"name" => "loginform"
 					);
-					echo form_open(<?php base_url();?>application/controllers/login,$attributes);
+					echo form_open(base_url().'login',$attributes);
 				 ?>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
