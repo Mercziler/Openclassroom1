@@ -49,7 +49,7 @@ class login extends CI_Controller {
           if ($this->form_validation->run() == FALSE)
           {
                //validation fails
-               //$this->load->view('login');
+               $this->load->view('login');
 		  
 	//header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/');
 	echo 'ta gueule';
@@ -77,7 +77,7 @@ class login extends CI_Controller {
 
                          if ($sessiondata['type'] == "admin") {
                          	# code...
-                         	//$this->load->view('Acceuil-admin');
+                         	$this->load->view('Acceuil-admin');
                               //header('location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php/Admin/');
 				 echo 'admin';
 
@@ -95,7 +95,7 @@ class login extends CI_Controller {
                               $data['SeanceInfo'] = $this->show_model->seance_show($idUser);
 
                               // on passe les données obtenues a "admin_view"
-                              //$this->load->view('enseignant_view', $data);
+                              $this->load->view('enseignant_view', $data);
 				 echo 'enseignant';
 
 
@@ -110,7 +110,7 @@ class login extends CI_Controller {
                          // affichage d'un message d'erreur puis redirection
                          $this->session->set_flashdata('msg',
                                '<div class="alert alert-danger text-center">login ou password invalid! Si vous etes sur que les données sont correct veuillez contacter l\'admin pour qu\'il active votre compte</div>');
-                         //header("location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php");
+                         header("location:http://openclassroom1-openclassroom1.127.0.0.1.nip.io/index.php");
 			    echo'erreur';
 	    		 
 	    		 exit();
