@@ -44,7 +44,7 @@
 						"id" => "loginform",
 						"name" => "loginform"
 					);
-					echo form_open("operation",$attributes);
+					echo form_open("Operation",$attributes);
 				 ?>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
