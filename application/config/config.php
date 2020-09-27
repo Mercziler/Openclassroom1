@@ -134,6 +134,7 @@ $config['composer_autoload'] = TRUE;
 |*/
 $config['composer_autoload'] = '/opt/app-root/src/composer.phar';
 */
+  /*
 |
 | For more information about Composer, please visit http://getcomposer.org/
 |
